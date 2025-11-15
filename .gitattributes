@@ -1,0 +1,4 @@
+TestData/* filter=lfs diff=lfs merge=lfs -text
+TestVectors/* filter=lfs diff=lfs merge=lfs -text
+cryptest filter=lfs diff=lfs merge=lfs -text
+lib/libcryptopp.a filter=lfs diff=lfs merge=lfs -text
