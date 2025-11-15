@@ -1,0 +1,7 @@
+from Crypto.Util.number import getPrime
+for _ in range(3):
+    print(getPrime(89))
+    
+# 535503437018065389967269619
+# 451441641597854652509094523
+# 327818691897586922698485401

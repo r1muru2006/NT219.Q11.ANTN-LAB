@@ -1,0 +1,1 @@
+g++ -DNDEBUG -I../include -L../lib -g3 -O2 -Wall -Wextra -o sol sol.cpp -l:libcryptopp.a
