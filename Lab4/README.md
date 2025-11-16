@@ -312,4 +312,15 @@ They are the same!!! Here is the value 38762cf7f55934b34d179ae6a4c80cadccbb7f0a
 
 3. From my point of view, it exists two messages which after hashing turn out to be the same.
 
-    Collisions exist in MD5 and SHA-1 because their fixed, shorter output sizes make it mathematically possible for two different inputs to produce the same hash value, a vulnerability that can be exploited through specific attacks. 
+    Collisions exist in MD5 and SHA-1 because their fixed, shorter output sizes make it mathematically possible for two different inputs to produce the same hash value, a vulnerability that can be exploited through specific attacks.
+
+### 3. Generating Two Different Files with the Same MD5 Hash
+#### Description
+In this task, we will generate two different files with the same MD5 hash values. The
+beginning parts of these two files need to be the same, i.e., they share the same prefix.
+We can achieve this using the `md5collgen` program, which allows us to provide a
+prefix file with any arbitrary content. The way how the program works is illustrated in
+Figure 2. The following command generates two output files, `out1.bin` and `out2.bin`,
+for a given a prefix the `prefix.txt`:
+
+    $ md5collgen -p prefix.txt -o out1.bin out2.bin
